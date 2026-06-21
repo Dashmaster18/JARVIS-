@@ -1,70 +1,126 @@
-🤖 Jarvis - Python Virtual Assistant
-Jarvis is a simple command-line virtual assistant built using Python. It can answer basic questions, provide the current date and time, search information from Wikipedia, tell jokes, and open popular websites such as YouTube and Google.
+# 🤖 Jarvis Virtual Assistant
 
-🚀 Features
-🕒 Display current time
-📅 Display current date
-👋 Respond to greetings
-😊 Answer "How are you?"
-📚 Search information about people using Wikipedia
-🔍 Search information about topics using Wikipedia
-🌐 Open YouTube and Google links
-😂 Tell programming jokes
-👋 Exit gracefully when requested
-🛠️ Technologies Used
-Python 3
-Wikipedia API (wikipedia library)
-Datetime Module
-📦 Installation
-1. Clone the Repository
-git clone https://github.com/your-username/jarvis-python-assistant.git
-cd jarvis-python-assistant
-2. Install Required Dependencies
-pip install wikipedia
-▶️ Running the Project
-Execute the Python file:
+A simple AI-inspired virtual assistant built using Python. Jarvis can respond to basic user commands, provide current date and time information, search Wikipedia for knowledge-based queries, tell jokes, and provide quick access links to popular websites.
 
-python jarvis.py
-You will see:
+## 🚀 Features
 
-Jarvis is running... Type 'exit' to stop.
-💬 Supported Commands
-Command	Description
-hello	Greets the user
-how are you	Returns a status message
-time	Displays current time
-date	Displays current date
-who is	Searches information about a person
-what is	Searches information about a topic
-open youtube	Returns YouTube URL
-open google	Returns Google URL
-joke	Tells a programming joke
-bye	Ends the conversation
-exit	Stops the program
-Example
-You: who is Elon Musk
+* 🕒 Displays current time
+* 📅 Displays current date
+* 👋 Greets users
+* 😊 Responds to conversational queries
+* 🌐 Searches Wikipedia for people and topics
+* 🎭 Tells programming jokes
+* 🔗 Opens popular websites (Google and YouTube)
+* ❌ Exit functionality
 
-Jarvis:
-Elon Musk is a business magnate, investor, and entrepreneur known for leading companies such as Tesla and SpaceX.
-📂 Project Structure
-jarvis-python-assistant/
+## 🛠️ Technologies Used
+
+* Python
+* Wikipedia API
+* Datetime Module
+
+## 📂 Project Structure
+
+```bash
+Jarvis-Virtual-Assistant/
 │
 ├── jarvis.py
 ├── README.md
 └── requirements.txt
-🔮 Future Improvements
-Voice Recognition
-Text-to-Speech Response
-Weather Updates
-News Headlines
-Application Launcher
-AI-Powered Conversations
-Email and WhatsApp Integration
-🤝 Contributing
-Contributions are welcome. Feel free to fork the repository, create a new branch, and submit a pull request.
+```
 
-📄 License
-This project is open-source and available under the MIT License.
+## 📋 Requirements
 
-👨‍💻 Author
-Developed as a beginner-friendly Python Virtual Assistant project to learn Python programming, APIs, and automation concepts.
+Install the required package before running the project:
+
+```bash
+pip install wikipedia
+```
+
+or
+
+```bash
+pip install -r requirements.txt
+```
+
+## ▶️ How to Run
+
+1. Clone the repository:
+
+```bash
+git clone https://github.com/yourusername/Jarvis-Virtual-Assistant.git
+```
+
+2. Navigate to the project directory:
+
+```bash
+cd Jarvis-Virtual-Assistant
+```
+
+3. Run the program:
+
+```bash
+python jarvis.py
+```
+
+## 💡 Example Commands
+
+| User Command     | Jarvis Response            |
+| ---------------- | -------------------------- |
+| hello            | Greets the user            |
+| what is python   | Provides Wikipedia summary |
+| who is Elon Musk | Provides Wikipedia summary |
+| time             | Shows current time         |
+| date             | Shows today's date         |
+| joke             | Tells a programming joke   |
+| open youtube     | Returns YouTube URL        |
+| open google      | Returns Google URL         |
+| bye              | Says goodbye               |
+
+## 📸 Sample Output
+
+```text
+Jarvis is running... Type 'exit' to stop.
+
+You: hello
+Jarvis: Hello! I am Jarvis. How can I help you?
+
+You: time
+Jarvis: Current time is 14:30
+
+You: who is Albert Einstein
+Jarvis: Albert Einstein was a German-born theoretical physicist...
+```
+
+## 🔮 Future Improvements
+
+* Voice Recognition using SpeechRecognition
+* Text-to-Speech responses using pyttsx3
+* OpenAI API integration for intelligent conversations
+* Weather updates
+* News fetching
+* Email automation
+* Application launching
+* Web browser automation
+* GUI using Tkinter or Streamlit
+
+## 🎯 Learning Outcomes
+
+This project demonstrates:
+
+* Python Programming Fundamentals
+* Conditional Logic and Control Flow
+* API Integration
+* Exception Handling
+* User Interaction through Command Line Interface
+* Working with External Libraries
+
+## 👨‍💻 Author
+
+**Lakshika Gangwar**
+
+A Python-based virtual assistant project developed to explore automation, natural language interaction, and API integration concepts.
+
+## ⭐ Support
+
+If you found this project useful, consider giving it a star on GitHub and sharing feedback for future improvements.
