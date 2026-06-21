@@ -1,0 +1,65 @@
+# Install required library
+!pip install wikipedia
+
+# Imports
+import datetime
+import wikipedia
+from openai import OpenAi
+
+# 🧠 Jarvis Brain
+def jarvis(command):
+    command = command.lower()
+
+    if "time" in command:
+        return "Current time is " + datetime.datetime.now().strftime('%H:%M')
+
+    elif "date" in command:
+        return "Today's date is " + str(datetime.date.today())
+
+    elif "hello" in command:
+        return "Hello! I am Jarvis. How can I help you?"
+
+    elif "how are you" in command:
+        return "I am functioning perfectly! What about you?"
+
+    elif "who is" in command:
+        person = command.replace("who is", "")
+        try:
+            return wikipedia.summary(person, 2)
+        except:
+            return "Sorry, I couldn't find information."
+
+    elif "what is" in command:
+        topic = command.replace("what is", "")
+        try:
+            return wikipedia.summary(topic, 2)
+        except:
+            return "Sorry, I couldn't find information."
+
+    elif "open youtube" in command:
+        return "https://www.youtube.com"
+
+    elif "open google" in command:
+        return "https://www.google.com"
+
+    elif "joke" in command:
+        return "Why do programmers prefer dark mode? Because light attracts bugs!"
+
+    elif "bye" in command:
+        return "Goodbye! Have a nice day!"
+
+    else:
+        return "Sorry, I didn't understand that."
+
+# 🔁 Main Loop
+print("Jarvis is running... Type 'exit' to stop.")
+
+while True:
+    command = input("You: ")
+
+    if command.lower() == "exit":
+        print("Jarvis: Stopped.")
+        break
+
+    response = jarvis(command)
+    print("Jarvis:", response)
